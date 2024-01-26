@@ -98,83 +98,18 @@ body{
 .header {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: space-between;
     width: 100%;
-    padding: 1rem 2rem; /* Adjust the padding as needed */
+    padding: 1rem 2rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: transparent; /* Presuming you want to keep the header transparent */
-}
-
-
-.header .logo {
-    margin-right: 3rem; /* Add some space between the logo and the search bar */
-   /* flex-grow: 1; or another value to allow the logo to grow */
-}
-
-/* Make the search form take up available space to the left, after the logo */
-.search-form {
-    flex-grow: 1; /* Grow to use available space */
-    display: flex;
-    justify-content: flex-start; /* Align to the left */
-}
-
-.search-form input[type="text"],
-.search-form button {
-    flex: 1; /* Allow both input and button to fill the space */
-}
-
-/* Adjust the search input to take more space */
-.search-form input[type="text"] {
-    flex: 1; /* Takes the remaining space */
-    padding: 0.5em 1em; /* Adjust padding as needed */
-    margin-right: 0.5em; /* Space between input and button */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem; /* Adjust font size as needed */
-}
-
-/* Adjust the search button size */
-.search-form button {
-    padding: 0.5em 0.5em; /* Adjust padding to reduce size */
-    background-color: #A9A9A9; /* Match with your site's color scheme */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 40px; /* Set a fixed width for the button */
-    flex: none; /* Prevent the button from growing */
-}
-
-/* Adjust icon size within the button */
-.search-form button i {
-    color: white;
-    font-size: 1rem; /* Adjust the font-size for larger or smaller icons */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .search-form {
-        width: 100%;
-        margin-top: 1rem; /* Add some space between the logo and the search bar on small screens */
-    }
-    
-    /* Adjust the search input and button to stack on small screens */
-    .search-form input[type="text"],
-    .search-form button {
-        width: 100%;
-        margin-right: 0; /* Remove margin between input and button */
-    }
+    position: fixed;
 }
 
 .header .logo img{
-    width: auto; /* Adjust the size as needed */
+    width: 100%;
     height: 5rem;
     top: 0;
     left: 0;
@@ -192,7 +127,7 @@ body{
 }
 
 .header .navbar ul li a{
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #fff;
 }
@@ -203,7 +138,7 @@ body{
 }
 
 .header .logo i{
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .header .fa-bars{
@@ -285,7 +220,7 @@ body{
 }
 
 .about{
-    min-height: -55vh;
+    min-height: 55vh;
     width: 100vw;
     top: -3rem;
     text-align: center;
@@ -419,7 +354,7 @@ body{
 .counters .container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 70px;
+	grid-gap: 30px;
 	text-align: center;
 }
 
@@ -1228,7 +1163,7 @@ body{
     }
 
     .about{
-        min-height: -38vh;
+        min-height: 38vh;
         width: 100vw;
         margin-top: -3rem;
         margin-bottom: -2rem;
@@ -1236,7 +1171,7 @@ body{
         text-align: center;
         position: relative;
         overflow: hidden;
-        line-height: 3rem;
+        line-height: 6rem;
     }
     
     .about .row{
@@ -1437,4 +1372,3 @@ body{
             width: 100%;
         }
 }
-
