@@ -353,7 +353,7 @@ body{
 
 .counters .container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 30px;
 	text-align: center;
 }
@@ -1101,7 +1101,7 @@ body{
 
     .header .logo img{
         width: 20%;
-        height: 5rem;
+        height: 4rem;
         top: 0;
         left: 0;
         background-size: cover;
@@ -1139,9 +1139,8 @@ body{
     }
 
     .header .navbar ul li a{
-        color: rgb(0, 255, 110);
-        font-size: 2.2rem;
-        font-weight: bold;
+        color: grey;
+        font-size: 2.4rem;
     }
 
     .header .fa-times{
